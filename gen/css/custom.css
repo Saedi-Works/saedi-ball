@@ -3,6 +3,8 @@ body {
 	padding:0;
 	
 	cusror:;
+	background-color: #5c008a;
+background-image: url("http://www.transparenttextures.com/patterns/brick-wall.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
 }
@@ -22,8 +24,12 @@ h1 {
 	font-family: 'Alegreya';
 	font-weight: bold;
 }
+.hide_this {
+	display: none;
+
+}
 #left_control {
-	width:20%;
+	
 	height:1000px;
 	float: left;
 }
@@ -69,6 +75,7 @@ h1 {
     font-size: 1.5em;
 }
 #myCanvas {
+	
 	background-color: rgba(0,0,0,0.2);
 }
 #ball_data {
@@ -82,4 +89,8 @@ h1 {
 button {
 	color:#fff;
 	background:gray;
+}
+.generated_canvas_wrapper {
+	text-align: center;
+	padding-top: 100px;
 }

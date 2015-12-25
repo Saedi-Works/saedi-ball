@@ -37,7 +37,7 @@ $('#draw').mousedown(function (event){
 	flag = 1;
 
 	circleX=event.clientX-left_add;
-	circleY=event.clientY;
+	circleY=-60+event.clientY;
 	console.log(circleX);
 	console.log(circleY);
 	var	color=$('.sp-preview-inner').css("background-color"); 
@@ -72,7 +72,7 @@ $('#draw').mousemove(function (event){
 
 		
 		circleX=event.clientX-left_add;
-		circleY=event.clientY;
+		circleY=-60+event.clientY;
 		console.log(circleX);
 		console.log(circleY);
 		var color=$('.sp-preview-inner').css("background-color"); 

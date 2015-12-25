@@ -16,36 +16,18 @@ var restoreForce =0.002 * frameInterval;
 var mouseX = 99999;
 var mouseY = 99999;
 
-var balls = null;
-var json_ball;
+//var balls = null;
+//var json_ball;
 
-function Ball(x,y,vx,vy,color) {
-	this.x=x;
-	this.y=y;
-	this.vx=vx;
-	this.vy=vy;
-	this.color=color;
 
-	this.origX = x;
-	this.origY = y;
-}
 
 function init() {
-
-		json_ball=JSON.stringify(balls);
-	var datastring='ball_data='+json_ball;
-	//console.log(json_ball);
-
-	jQuery.ajax({
-		type: "GET",
-		url: "includes/generate.php",
-		data: datastring,
-		cache: false,
-		success: function(result){
-			//alert(result);
-					window.location.href='generated.php?id='+result;
-				}
-			});
+	// canvas=document.getElementById("myCanvas");
+	// context=canvas.getContext("2d");
+	//initStageObjects();
+	
+	//alert('sss');
+console.log(balls);
 	setInterval(updateStage, frameInterval);
 }
 
