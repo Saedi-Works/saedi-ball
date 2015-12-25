@@ -3,8 +3,7 @@ body {
 	padding:0;
 	
 	cusror:;
-	background-color: #5c008a;
-background-image: url("http://www.transparenttextures.com/patterns/brick-wall.png");
+	background-color: #333;	
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
 }
@@ -12,6 +11,7 @@ h1 {
 	font-family: 'Alegreya';
 	font-weight: bold;
 	font-size: 1.4em;
+
 }
 #log {
 	height:60px;
@@ -30,13 +30,22 @@ h1 {
 }
 #left_control {
 	
-	height:1000px;
+	height:auto;
 	float: left;
+		color:#fff !important;
+		padding:10px !important;
+		font-family: 'Alegreya';
+	font-weight: bold ;
+	font-size:1.5em !important;
+		position: fixed;
+		bottom: 0px;
 }
 #board_wrapper {
 	width:60%;
 	float: left;
 	position: relative;
+	text-align: center;
+	width:100%;
 
 }
 #right_control {
@@ -44,8 +53,9 @@ h1 {
 	float:left;
 	color:#fff;
 	font-family: 'Alegreya';
-	font-weight: bold;
+	font-weight: bold ;
 	font-size: 1.5em;
+		color:#fff !important;
 	
 }
 #cursor {
